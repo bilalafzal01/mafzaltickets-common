@@ -2,7 +2,7 @@ import { CustomError } from '@/errors/custom-error'
 
 export class DatabaseConnectionError extends CustomError {
   statusCode = 500
-  reason = 'Error connecting to database'
+  reason = 'Error connecting to database. Check mongo connection.'
 
   constructor() {
     super('Error connecting to database')
